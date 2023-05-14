@@ -76,7 +76,7 @@ public class CharacterMovement : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject.name);
+        Debug.Log("Player touch: " + collision.gameObject.name);
         if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
             gameControler.GetComponent<EndGame>().GameFinish();

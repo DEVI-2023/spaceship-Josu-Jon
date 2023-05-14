@@ -23,7 +23,15 @@ public class Enemy : MonoBehaviour
         lifes--;
         if (lifes<=0) 
         {
-            Die();
+            if (gameObject.tag == "Boss")
+            {
+                gameControler.GetComponent<EndGame>().GameFinish();
+            }
+            else
+            {
+                Die();
+            }
+            Debug.Log(lifes);
         }
         
     }
@@ -40,14 +48,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            if (gameObject.tag == "Boss")
-            {
-                gameControler.GetComponent<EndGame>().GameFinish();
-            }
-            else
-            {
-                Die();
-            }
+                Hit();
         }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("Bomb"))
         {

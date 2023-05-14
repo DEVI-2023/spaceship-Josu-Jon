@@ -1,0 +1,32 @@
+Bienvenido a "Spaceships Wars"
+
+Objetivo del juego:
+
+Tu manejas una nave y tienes que ir destruyendo las naves enemigas hasta toparte con el Jefe final.
+Este jefe cuenta con un escudo que le protege de los ataques. Puede ser destruido tras varios ataques.
+Mientras el jefe este vivo ira generando naves enemigas que se dirigiran hacia ti.
+Si cualquier nave enemiga te toca el juego acaba.
+Para ganar hay que destruir al Jefe.
+
+Controles Basicos:
+
+La nave rota sobre si misma con las siguientes teclas:
+	W --> Rotar hacia arriba (X)
+	S --> Rotar hacia abajo (-X)
+	A --> Rotar hacia la izquierda (Y)
+	D --> Rotar hacia la derecha (-Y)
+	Q --> Rotar hacia la izquierda (Z)
+	R --> Rotar hacia la derecha (-Z)
+La nave se mueve hacia adelante de manera automatica.
+Por defecto la velocidad inicial es 0.
+Para controlar la velocidad se usan los numeros:
+	0 --> No se mueve
+	1,2,3,4,5 --> velocidad de menos(1) a mas(5)
+
+Con el CLick izquierdo del raton la nave dispara dos balas hacia delante.
+Estas balas son ilimitadas, pero tienen un alcanze limitado.
+
+Con el Click derecho del raton la nave lanza una bomba.
+Esta bomba tiene unos segundos de delay antes de explotar.
+La bomba se expande y destruye todos los enemigos que toque.
+Esta bomba cuenta con un coldown de 10 segundos.

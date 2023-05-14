@@ -57,7 +57,7 @@ public class ShootSpawner : MonoBehaviour
 
     public void ActiveBoss()
     {
-        if (deads >= 1)
+        if (deads >= 10)
         {
             boss.SetActive(true);
         }
